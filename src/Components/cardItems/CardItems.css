@@ -1,0 +1,41 @@
+.cards{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10%;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    transition: 0.6s;
+}
+
+.card .card-img{
+    width: 100%;
+}
+.card .card-img img{
+    width: 100%;
+}
+
+.card-text .title{
+    font-size: 14px;
+}
+
+.card-text .price{
+    color: #374151;
+    font-size: 18px;
+    font-weight: 600;
+}
+.card-text .price span{
+    color: #8c8c8c;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: line-through;
+    margin: 0 0 0 10px;
+}

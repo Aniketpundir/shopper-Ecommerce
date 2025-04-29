@@ -1,0 +1,40 @@
+.Banner{
+    margin: 40px 5%;
+    margin-left: 7%;
+    margin-right: 7%;
+    background: linear-gradient(180deg,#fde1ff,#e1ffea22 60%);
+    height: 50vh;
+}
+
+.banner-content{
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-content .banner-text h1{
+    font-size: 52px;
+    font-weight: 600;
+}
+
+.banner-content .banner-text p{
+   text-transform: uppercase;
+}
+
+.banner-content .banner-text button{
+   margin-top: 20px;
+   padding: 10px 40px;
+   border-radius: 30px;
+   border: none;
+   background-color: red;
+   color: #fff;
+}
+
+.banner-content .banner-img{
+    width: 20%;
+}
+.banner-content .banner-img img{
+    width: 100%;
+}
