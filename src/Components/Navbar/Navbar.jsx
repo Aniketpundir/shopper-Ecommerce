@@ -1,11 +1,14 @@
-import React, { useState } from "react";
+import React, { use, useContext, useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import cart_icon from "../../assets/cart_icon.png";
+import { ShopContext } from "../../Context/ShopContext";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("shop");
+  const { getTotalCartItems } = useContext(ShopContext);
+
   return (
     <>
       <div className="Navbar-container">
@@ -16,22 +19,29 @@ const Navbar = () => {
           </div>
           <div className="navbar-menu">
             <p onClick={() => setMenu("shop")}>
-              Shop {menu === "shop" ? <hr /> : <></>}
+              <Link to="/"> Shop {menu === "shop" ? <hr /> : <></>}</Link>
             </p>
+
             <p onClick={() => setMenu("Mens")}>
-              Men {menu === "Mens" ? <hr /> : <></>}
+              <Link to="mens">Men {menu === "Mens" ? <hr /> : <></>}</Link>
             </p>
+
             <p onClick={() => setMenu("Womens")}>
-              Women {menu === "Womens" ? <hr /> : <></>}
+              <Link to="womens">
+                Women {menu === "Womens" ? <hr /> : <></>}
+              </Link>
             </p>
+
             <p onClick={() => setMenu("Kids")}>
-              Kids {menu === "Kids" ? <hr /> : <></>}
+              <Link to="kids"> Kids {menu === "Kids" ? <hr /> : <></>}</Link>
             </p>
           </div>
           <div className="login-and-cart-button">
             <button>Login</button>
-            <img src={cart_icon} />
-            <div className="nav-cart-count">0</div>
+            <Link to="cart">
+              <img src={cart_icon} />
+              <div className="nav-cart-count">{getTotalCartItems()}</div>
+            </Link>
           </div>
         </div>
       </div>

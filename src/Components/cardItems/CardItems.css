@@ -9,6 +9,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 10%;
+    cursor: pointer;
 }
 
 .card:hover{

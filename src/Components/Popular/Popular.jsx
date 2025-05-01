@@ -13,7 +13,7 @@ export const Popular = () => {
           {data_product.map((items, index) => {
             return (
               <CardItems
-                key={index}
+                id={items.id}
                 image={items.image}
                 name={items.name}
                 new_price={items.new_price}

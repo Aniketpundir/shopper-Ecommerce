@@ -1,0 +1,38 @@
+.news-latter{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+   
+}
+
+.news-latter-content{
+    background: linear-gradient(180deg,#fde1ff,#e1ffea22 60%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    justify-content: center;
+}
+
+.news-latter-content h1{
+    font-size: 42px;
+    font-weight: 400;
+}
+.news-latter-content p{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.news-latter-content .news-letter-input-button input{
+    padding: 10px 50px;
+    border: 1px solid black;
+}
+
+.news-latter-content .news-letter-input-button button{
+    padding: 10px 30px;
+    border: 1px solid black;
+    background: black;
+    color: #fff;
+    cursor: pointer;
+}

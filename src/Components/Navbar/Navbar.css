@@ -41,6 +41,11 @@
 .navbar-content .navbar-menu p{
     cursor: pointer;
 }
+.navbar-content .navbar-menu p a{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
 
 .navbar-content .navbar-menu hr{
     margin-left: 0px;
@@ -71,18 +76,21 @@
     transition: 0.3s ease-in-out;
 }
 
-.navbar-content .login-and-cart-button img{
+.navbar-content .login-and-cart-button a{
+    text-decoration: none;
+    margin-top: -30px;
     width: 20%;
 }
 
 .nav-cart-count{
+    text-decoration: none;
     width: 18px;
     height: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -28px;
-    margin-left: -50px;
+    margin-top: -50px;
+    margin-left: 30px;
     border-radius: 11px;
     background-color: red;
     color: white;

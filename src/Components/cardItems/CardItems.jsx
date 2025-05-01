@@ -1,6 +1,7 @@
 import React from "react";
 import "./cardItems.css";
 import png from "../../assets/product_1.png";
+import { Link } from "react-router-dom";
 
 const CardItems = (props) => {
   return (
@@ -8,7 +9,9 @@ const CardItems = (props) => {
       <div className="cards">
         <div className="card">
           <div className="card-img">
-            <img src={props.image} alt="" />
+            <Link to={`/product/${props.id}`}>
+              <img src={props.image} onClick={window.scroll(0, -10)} alt="" />
+            </Link>
           </div>
           <div className="card-text">
             <p className="title">{props.name}</p>
