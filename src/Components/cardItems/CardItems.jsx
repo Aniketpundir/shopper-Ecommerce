@@ -1,5 +1,5 @@
 import React from "react";
-import "./cardItems.css";
+import "./CardItems.css";
 import png from "../../assets/product_1.png";
 import { Link } from "react-router-dom";
 
